@@ -20,6 +20,7 @@ Follow the instructions and once you have successfully installed homebrew, you'r
 ``` 
 $ brew install git
 ```
+
 ### How to add autocomplete
 If you try autocompletion with the tab you'll see that it doesn't work with Git. Let's fix it!
 First we must install `bash-complition`
@@ -68,6 +69,7 @@ difftool             rebase               worktree
 fetch                reflog
 filter-branch        remote
 ```
+
 ### How to Configure Git
 Let's finish setting Git by adding a username and email. We use the `--global` setting which allows these configurations to be applied to any other repository that we work on locally.
 ```
@@ -91,5 +93,6 @@ $ cd space-x-project/
 $ git init
 ```
 `git init` will initialize our folder and create a hidden `.git` directory where the repository and configurations will be stored.
+
 ### Checking the Repo Status (`git status`)
 x
