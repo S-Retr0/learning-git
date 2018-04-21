@@ -17,7 +17,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 ```
 Follow the instructions and once you have successfully installed homebrew, you're ready to install Git:
 ``` 
-brew install git
+$ brew install git
 ``` 
  
   
