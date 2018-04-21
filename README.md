@@ -34,4 +34,34 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 ```
-Use `ctrl+c` to end the `cat` command
+Use `ctrl+c` to end the `cat` command, then refresh the terminal:
+```
+$ source ~/.bash_profile
+```
+Done. Now you have autocomplition for git. Let's test it.
+Type `git`, hit the spacebar then tab and you will get the list of all the available commands git offers.
+```
+$ git
+add                  format-patch         repack
+am                   fsck                 replace
+annotate             gc                   request-pull
+apply                get-tar-commit-id    reset
+archive              grep                 revert
+bisect               gui                  rm
+blame                help                 send-email
+branch               init                 shortlog
+bundle               instaweb             show
+checkout             interpret-trailers   show-branch
+cherry               log                  stage
+cherry-pick          merge                stash
+citool               mergetool            status
+clean                mv                   submodule
+clone                name-rev             subtree
+commit               notes                svn
+config               p4                   tag
+describe             pull                 verify-commit
+diff                 push                 whatchanged
+difftool             rebase               worktree
+fetch                reflog
+filter-branch        remote
+```
