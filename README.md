@@ -151,4 +151,7 @@ A commit represents the state of our repository at a given point in time. It's l
 ```
 $ git commit -m "First Commit"
 ```
-The `-m`option specifies that you are going to add a message within the command. Otherwise you can just type `git commit`, which will open up a text editor (for example Vim) and ask you to enter a commit message.
+The `-m`option specifies that you are going to add a message within the command. Otherwise you can just type `git commit`, which will open up a text editor (in our case Atom since we set it as the default one) and ask you to enter a commit message.
+
+### Commiting (git commit)
+A
