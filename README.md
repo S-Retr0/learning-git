@@ -95,7 +95,7 @@ $ git init
 `git init` will initialize our folder and create a hidden `.git` directory where the repository and configurations will be stored.
 
 ### Checking the Repo Status (git status)
-Running `git status` will return information about the current state of our repo, like if we have new files, new changes made, if everything is up to date and so on...
+Running `git status` will return information about the current state of our repo, like if we have new files, new changes made, if everything is up to date, which is the current branch and much more.
 ```
 $ git status
 On branch master
@@ -123,3 +123,21 @@ Now `git status` tells us that we have an untracked file (`README.md`).
 
 ### Staging (git add)
 Git has the concept of a "staging area". You can think of this like a blank canvas, which holds the changes which you would like to commit. It starts out empty, but you can add files to it (or even single lines and parts of files) with the `git add` command, and finally **COMMIT** everything **(CREATE A SNAPSHOT)** with `git commit`.
+We have different methods to add files:
+We can add a single file `git add <file>`:
+```
+$ git add README.md
+```
+Multiple files `git add <file1> <file2> <file3>`
+Or we can add everything with the `-A` option.
+```
+$ git add -A
+```
+To learn more about it run:
+```
+$ git add --help
+```
+Now our files are ready to be commited.
+
+### Commiting (git commit)
+Gi
