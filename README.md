@@ -82,6 +82,13 @@ $ git config --list
 ```
 If you want to edit any of your configuration settings, you can do so by editing the `~/.gitconfig` file.
 
+### Making Atom the Deafult Text Editor for Git
+By default, Git uses VIM, which is... well, I don't like it at all. I prefer nano while using the terminal or [atom.io](https://atom.io/ "Atom.io) for every day use.
+So I'm going to make atom my default text editor, feel free to keep Vim or use whatever text editor you're confortable with.
+```
+$ git config --global core.editor "atom --wait"
+```
+
 ## Understanding the Git Workflow
 Let's learn the basics of the Git Workflow with a practical example. We will create a local repository, check its status, make some changes and then save them (commit).
 
