@@ -129,15 +129,19 @@ We can add a single file `git add <file>`:
 $ git add README.md
 ```
 Multiple files `git add <file1> <file2> <file3>`
-Or we can add everything with the `-A` option.
+Or we can add everything with the `-A` option. (But it's a good habit to only add the files you need, don't abuse `-A`)
 ```
 $ git add -A
 ```
-To learn more about it run:
+To learn more the `add` command about it run:
 ```
 $ git add --help
 ```
-Now our files are ready to be commited.
+Now our files are ready to be commited. Running again `git status` will tell us that we have a new file ready to be committed.
 
 ### Commiting (git commit)
-Gi
+A commit represents the state of our repository at a given point in time. It's like snapashot, which we can go back to see how things were when we took it. To create a new commit we need to have at least one change added to the staging area and run the following:
+```
+$ git commit -m "First Commit"
+```
+The `-m`option specifies that you are going to add a message within the command. Otherwise you can just type `git commit`, which will open up a text editor (for example Vim) and ask you to enter a commit message.
