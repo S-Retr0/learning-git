@@ -67,8 +67,12 @@ difftool             rebase               worktree
 fetch                reflog
 filter-branch        remote
 ```
-Let's finish our setting Git by adding a username and email. We use the `--global` setting which allows these configurations to be applied to any other repository that we work on locally.
+Let's finish setting Git by adding a username and email. We use the `--global` setting which allows these configurations to be applied to any other repository that we work on locally.
 ```
 $ git config --global user.name "Username"
 $ git config --global user.email email@example.com
 ```
+
+### Git Workflow
+
+x
