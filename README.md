@@ -85,7 +85,7 @@ If you want to edit any of your configuration settings, you can do so by editing
 ## Understanding the Git Workflow
 Let's learn the basics of the Git Workflow with a practical example. We will create a local repository, check its status, make some changes and then save them (commit).
 
-### Create a New Repo (`git init`)
+### Create a New Repo (git init)
 Let's create a new directory, and initialize it. 
 ```
 $ mkdir space-x-project
@@ -94,5 +94,32 @@ $ git init
 ```
 `git init` will initialize our folder and create a hidden `.git` directory where the repository and configurations will be stored.
 
-### Checking the Repo Status (`git status`)
-x
+### Checking the Repo Status (git status)
+Running `git status` will return information about the current state of our repo, like if we have new files, new changes made, if everything is up to date and so on...
+```
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+```
+As we can see our repo is empty, let's create a file and check it again:
+```
+$ touch README.md
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+Now `git status` tells us that we have an untracked file (`README.md`).
+
+### Staging (git add)
+Git has the concept of a "staging area". You can think of this like a blank canvas, which holds the changes which you would like to commit. It starts out empty, but you can add files to it (or even single lines and parts of files) with the `git add` command, and finally **COMMIT** everything **(CREATE A SNAPSHOT)** with `git commit`.
