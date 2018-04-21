@@ -3,13 +3,13 @@
 This is a simple guide I'm creating while I'm trying to learn Git since I'm new to it.
 I'm just looking and adding content from different books, blogs and docs and trying to write something that will help me out to become familiar with Git.
 
-### What is Git?
+## What is Git?
 
 Git a collection of command line utilities that track and record changes in file (most often source code, but you track anything you wish). With Git you can restore old version of your project, compare, analyse, merge changes and more. This process is referred to as VERSION CONTROL.
 
 Git is decentralized, which means that it doesn't depend on a central server to keep old versions of your files. Instead it works fully locally by storing this data as a folder on your hard drive, which we call a REPOSITORY. However you can store a copy of your repository online, which makes it easy for multiple people to collaborate and work on the same code. This is what websites like "Github" and "BitBucket" are used for.
 
-### How to install and configure Git (and add autocomplete)
+## How to install and configure Git
 
 On macOS we first need to install [Homebrew](https://brew.sh/ "Homebrew"), which is a package managaer for macOS.
 Copy and paste the following line in the terminal:
@@ -20,6 +20,7 @@ Follow the instructions and once you have successfully installed homebrew, you'r
 ``` 
 $ brew install git
 ```
+### How to add autocomplete
 If you try autocompletion with the tab you'll see that it doesn't work with Git. Let's fix it!
 First we must install `bash-complition`
 ```
@@ -67,6 +68,7 @@ difftool             rebase               worktree
 fetch                reflog
 filter-branch        remote
 ```
+### How to Configure Git
 Let's finish setting Git by adding a username and email. We use the `--global` setting which allows these configurations to be applied to any other repository that we work on locally.
 ```
 $ git config --global user.name "Username"
@@ -76,7 +78,8 @@ To check all the configuartion settings for the repository you're in, type:
 ```
 $ git config --list
 ```
+If you want to edit any of your configuration settings, you can do so by editing the `~/.gitconfig` file.
 
-### Git Workflow
+## Understanding the Git Workflow
 
 x
