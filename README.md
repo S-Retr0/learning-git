@@ -22,7 +22,9 @@ $ brew install git
 ```
 If you try autocompletion with the tab you'll see that it doesn't work with Git. Let's fix it!
 First we must install `bash-complition`
-`$ brew install bash-complition`
+`
+$ brew install bash-complition
+`
 Now we add it to `~/.bash_profile` and refresh the terminal:
 We will use `cat` to append some lines at the end of `~/.bash_profile` (you can nano or any text editor)
 ```
