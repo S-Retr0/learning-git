@@ -11,13 +11,13 @@ Git is decentralized, which means that it doesn't depend on a central server to 
 
 ### How to install Git
 
-On macOS we first need to install Homebrew (https://brew.sh/ "Homebrew"), which is a package managaer for macOS.
-
-  $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
- 
- Follow the instructions and once you have successfully installed homebrew, you're ready to install Git:
- 
-  brew install git
- 
+On macOS we first need to install [Homebrew] (https://brew.sh/ "Homebrew"), which is a package managaer for macOS.
+'''
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+'''
+Follow the instructions and once you have successfully installed homebrew, you're ready to install Git:
+''' 
+brew install git
+''' 
  
   
