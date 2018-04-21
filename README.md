@@ -81,5 +81,15 @@ $ git config --list
 If you want to edit any of your configuration settings, you can do so by editing the `~/.gitconfig` file.
 
 ## Understanding the Git Workflow
+Let's learn the basics of the Git Workflow with a practical example. We will create a local repository, check its status, make some changes and then save them (commit).
 
+### Create a New Repo (`git init`)
+Let's create a new directory, and initialize it. 
+```
+$ mkdir space-x-project
+$ cd space-x-project/
+$ git init
+```
+`git init` will initialize our folder and create a hidden `.git` directory where the repository and configurations will be stored.
+### Checking the Repo Status (`git status`)
 x
