@@ -9,7 +9,7 @@ Git a collection of command line utilities that track and record changes in file
 
 Git is decentralized, which means that it doesn't depend on a central server to keep old versions of your files. Instead it works fully locally by storing this data as a folder on your hard drive, which we call a REPOSITORY. However you can store a copy of your repository online, which makes it easy for multiple people to collaborate and work on the same code. This is what websites like "Github" and "BitBucket" are used for.
 
-### How to install Git and configure it
+### How to install Git, add autocomplete and configure it
 
 On macOS we first need to install [Homebrew](https://brew.sh/ "Homebrew"), which is a package managaer for macOS.
 Copy and paste the following line in the terminal:
