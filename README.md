@@ -175,3 +175,21 @@ index 8b13789..eb2665f 100644
 +Aye. Chocolate Rain...
 ```
 We can see that we have 3 new lines, the `+` (green) indicates it's been added while `-` (red) it's been removed, but since our file was empty we don't have any red `-`.
+Go ahead, stage and commit the changes.
+
+### Commit History (git log)
+To view the history of a project, we use the `git log` command, you should get something like this:
+```
+commit 82ee81ef3e6129033e4e1a5d1234516a305e6ff
+Author: S-Retr0 <retr0@mail.com>
+Date:   Sat Apr 21 18:30:02 2018 +0200
+
+    Updated README
+
+commit d266a610418dff012345c3e4bc9d1abad8dd4096
+Author: S-Retr0 <retr0@mail.com>
+Date:   Sat Apr 21 18:27:52 2018 +0200
+
+    Added problems.txt
+```
+Each commit has a unique hash, author, timestamp and commit message.
