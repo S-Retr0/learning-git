@@ -146,7 +146,7 @@ We have different methods to add files:
    ```
    $ git add -A
    ```
-To learn more the `add` command about it run:
+To learn more about the `add` command run:
 ```
 $ git add --help
 ```
