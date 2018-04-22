@@ -196,5 +196,5 @@ Each commit has a unique hash, author, timestamp and commit message.
 
 ## Whas is .gitignore?
 
-Git only tracks the files you ask it to, but you might ask it to track some files by mistake (for example if you use `git add .` it will track all the files in the current direcory).
+Git only tracks the files you ask it to, but you might ask it to track some files by mistake (if you use `git add .` for example, it will track all the files in the current direcory).
 Sometimes you want Git to not track some particular files, so you need to hide them from Git, here is where the `.gitignore` file comes to your help.
