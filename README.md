@@ -153,5 +153,5 @@ $ git commit -m "First Commit"
 ```
 The `-m`option specifies that you are going to add a message within the command. Otherwise you can just type `git commit`, which will open up a text editor (in our case Atom since we set it as the default one) and ask you to enter a commit message.
 
-### Commiting (git commit)
-A
+### See changes made to tracked files (git diff)
+x
