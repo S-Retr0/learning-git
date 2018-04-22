@@ -193,3 +193,7 @@ Date:   Sat Apr 21 18:27:52 2018 +0200
     Added problems.txt
 ```
 Each commit has a unique hash, author, timestamp and commit message.
+
+## .gitignore
+
+On
