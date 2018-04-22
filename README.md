@@ -161,7 +161,7 @@ The `-m`option specifies that you are going to add a message within the command.
 
 ### See changes made to tracked files (git diff)
 The `diff` command shows the changes that have been made to the tracked files in the repository since the last commit.
-Our `README.md` file is empty for now, add some text to it and use `git diff` to check what changed, for example I added some stupid line and here is the output:
+Our `README.md` file is empty for now, add some text to it and use `git diff` to check what changed, for example I added some stupid lines and here is the output:
 ```
 $ git diff
 diff --git a/README.md b/README.md
