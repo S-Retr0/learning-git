@@ -130,18 +130,19 @@ Now `git status` tells us that we have an untracked file (`README.md`).
 
 ### Staging (git add)
 Git has the concept of a "staging area". You can think of this like a blank canvas, which holds the changes which you would like to commit. It starts out empty, but you can add files to it (or even single lines and parts of files) with the `git add` command, and finally **COMMIT** everything **(CREATE A SNAPSHOT)** with `git commit`.
+
 We have different methods to add files:
-We can add a single file `git add <file>`:
+* We can add a single file `git add <file>`:
 ```
 $ git add README.md
 ```
-Multiple files `git add <file1> <file2> <file3>`
+* Multiple files `git add <file1> <file2> <file3>`
 
-We can add all tracked files with `-u`option
+* We can add all tracked files with `-u`option
 ```
 $ git add -u
 ```
-Or we can add everything with the `-A` option. (It's a good habit to only add the files you need, don't abuse `-A`)
+* Or we can add everything with the `-A` option. (It's a good habit to only add the files you need, don't abuse `-A`)
 ```
 $ git add -A
 ```
