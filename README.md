@@ -152,6 +152,10 @@ $ git add --help
 ```
 Now our files are ready to be commited. Running again `git status` will tell us that we have a new file ready to be committed.
 
+#### Whas is .gitignore?
+Git only tracks the files you ask it to, but you might ask it to track some files by mistake (if you use `git add .` for example, it will track all the files in the current direcory).
+Sometimes you want Git to not track some particular files, so you need to hide them from it, here is where the `.gitignore` file comes to your help, which is a file added to the root directory of the repository, and it lists files you don't want Git to track or display as part of `git status`.
+
 ### Commiting (git commit)
 A commit represents the state of our repository at a given point in time. It's like snapashot, which we can go back to see how things were when we took it. To create a new commit we need to have at least one change added to the staging area and run the following:
 ```
@@ -196,4 +200,5 @@ Each commit has a unique hash, author, timestamp and commit message.
 
 ### Whas is .gitignore?
 Git only tracks the files you ask it to, but you might ask it to track some files by mistake (if you use `git add .` for example, it will track all the files in the current direcory).
-Sometimes you want Git to not track some particular files, so you need to hide them from Git, here is where the `.gitignore` file comes to your help.
+Sometimes you want Git to not track some particular files, so you need to hide them from it, here is where the `.gitignore` file comes to your help, which is a file added to the root directory of the repository, and it lists files you don't want Git to track or display as part of `git status`.
+
