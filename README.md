@@ -136,6 +136,7 @@ We can add a single file `git add <file>`:
 $ git add README.md
 ```
 Multiple files `git add <file1> <file2> <file3>`
+
 We can add all tracked files with `-u`option
 ```
 $ git add -u
