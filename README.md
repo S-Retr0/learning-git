@@ -136,7 +136,11 @@ We can add a single file `git add <file>`:
 $ git add README.md
 ```
 Multiple files `git add <file1> <file2> <file3>`
-Or we can add everything with the `-A` option. (But it's a good habit to only add the files you need, don't abuse `-A`)
+We can add all tracked files with `-u`option
+```
+$ git add -u
+```
+Or we can add everything with the `-A` option. (It's a good habit to only add the files you need, don't abuse `-A`)
 ```
 $ git add -A
 ```
@@ -154,4 +158,18 @@ $ git commit -m "First Commit"
 The `-m`option specifies that you are going to add a message within the command. Otherwise you can just type `git commit`, which will open up a text editor (in our case Atom since we set it as the default one) and ask you to enter a commit message.
 
 ### See changes made to tracked files (git diff)
-x
+The `diff` command shows the changes that have been made to the tracked files in the repository since the last commit.
+Our `README.md` file is empty for now, add some text to it and use `git diff` to check what changed, for example I added some stupid line and here is the output:
+```
+$ git diff
+diff --git a/README.md b/README.md
+index 8b13789..eb2665f 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,4 @@
+
++Adding some text.
++Adding more text.
++Aye. Chocolate Rain...
+```
+We can see that we have 3 new lines, the `+` (green) indicates it's been added while `-` (red) it's been removed, but since our file was empty we don't have any red `-`.
