@@ -133,19 +133,19 @@ Git has the concept of a "staging area". You can think of this like a blank canv
 
 We have different methods to add files:
 * We can add a single file `git add <file>`:
-```
-$ git add README.md
-```
+   ```
+   $ git add README.md
+   ```
 * Multiple files `git add <file1> <file2> <file3>`
 
 * We can add all tracked files with `-u`option
-```
-$ git add -u
-```
+   ```
+   $ git add -u
+   ```
 * Or we can add everything with the `-A` option. (It's a good habit to only add the files you need, don't abuse `-A`)
-```
-$ git add -A
-```
+   ```
+   $ git add -A
+   ```
 To learn more the `add` command about it run:
 ```
 $ git add --help
