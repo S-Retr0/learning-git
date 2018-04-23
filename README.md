@@ -154,7 +154,21 @@ Now our files are ready to be commited. Running again `git status` will tell us 
 
 #### Whas is `.gitignore`?
 Git only tracks the files you ask it to, but you might ask it to track some files by mistake (if you use `git add .` for example, it will track all the files in the current direcory).
-Sometimes you want Git to not track some particular files, so you need to hide them from it, here is where the `.gitignore` file comes to your help, which is a file added to the root directory of the repository, and it lists files you don't want Git to track or display as part of `git status`.
+Sometimes you want Git to not track some particular files, so you need to hide them from it, here is where the `.gitignore` file comes to your help, which is a file added to the root directory of the repository, and it lists files you don't want Git to track or display as part of `git status`. Let's add one to make some practice:
+1. Create a file called `.gitignore`
+   ```
+   $ touch .gitignore
+   ```
+2. Use an editor and write down the files/folder you don't want Git to track
+   ```
+   $ cat >> .gitignore
+   secret_idea.txt
+   secret_folder/
+   *.log
+   ```
+3. Now stage the `.gitignore` file
+   ```
+   $ git add .gitignore
 
 ### Commiting (git commit)
 A commit represents the state of our repository at a given point in time. It's like snapashot, which we can go back to see how things were when we took it. To create a new commit we need to have at least one change added to the staging area and run the following:
