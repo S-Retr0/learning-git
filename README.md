@@ -240,4 +240,9 @@ $ git pull origin master
 
 ## Branching
 
-On
+When developing a new feature, it is considered a good practice to do it on a copy of the original project, called a **BRANCH**. Branches have their own history and isolate their changes from one another, until you decide to **MERGE** them back together.
+This is done for a couple of reasons:
+- An already working, stable version of the code won't be broken;
+- Many features can be safely developed at once by different people;
+- Developers can work work on their own branch, without the risk of their codebase changing due to someone else's work;
+- When unsure what's best, multiple versions of the same feature can be developed on separate branches and then compared.
