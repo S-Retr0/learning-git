@@ -210,4 +210,7 @@ We first have to establish a connection to the repository we created on GitHub.
 ```
 $ git remote add origin https://github.com/user-name/repository-name.git
 ```
-A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. Traditionally the main remote repository in git is called "origin".
+A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. Traditionally the main remote repository in git is called `origin`.
+
+### Uploading to a Server (git push)
+We
