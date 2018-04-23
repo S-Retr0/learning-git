@@ -204,3 +204,10 @@ For now our repository is local, but we may need to share it with someone for co
 We will copy our repo in a centralized server, in this case GitHub (this new copy is called a **remote**).
 
 ### Connect to a Remote Repository (git remote add)
+(*In order to upload something to GitHub you must have an account, and create your repo on it. I assume you already did this two things, so let's keep going.*)
+
+We first have to establish a connection to the repository we created on GitHub.
+```
+$ git remote add origin https://github.com/user-name/repository-name.git
+```
+A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. Traditionally the main remote repository in git is called "origin".
