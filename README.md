@@ -231,3 +231,9 @@ Say for example a friend of yours need to have a copy of your repo (so he can he
 $ git clone https://github.com/your-username/project-name.git
 ```
 And just like that a new local repository is automatically created in his computer, with the github version configured as a remote.
+
+### Getting Updates from the Server (git pull)
+If you make updates to your repository, your friend can get updates by first downloading the new changes `git fetch`, then merging it to the appropriate branch `git merge`. An alternative is to use `pull`, which is runs the fetch followed by a merge.
+```
+$ git pull origin master
+```
