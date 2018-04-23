@@ -213,4 +213,4 @@ $ git remote add origin https://github.com/user-name/repository-name.git
 A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. Traditionally the main remote repository in git is called `origin`.
 
 ### Uploading to a Server (git push)
-We
+Our remote repository should be empty now, while our local repo has the `README.md` file, so let's transfer out local commits to the server. This process is called **PUSH**.
