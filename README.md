@@ -262,7 +262,7 @@ This is done for a couple of reasons:
 - When unsure what's best, multiple versions of the same feature can be developed on separate branches and then compared.
 
 ### Creating a New Branch (git branch)
-For now, we only have one branch, which is the default called `master`. Let's check if it's true
+For now, we only have one branch, which is the default called `master`. Let's check if it's true (the current branch you're in is always marked with a `*`)
 ```
 $ git branch
 * master
@@ -276,4 +276,7 @@ $ git branch -a
 Let's add a new branch to work on and call it `test_branch`
 ```
 $ git branch test_branch
+$ git branch
+* master
+  test_branch
 ```
