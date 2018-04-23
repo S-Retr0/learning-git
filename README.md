@@ -225,7 +225,8 @@ The `-u` option stands for “upstream”. It links your repository to an upstre
 
 ### Cloning a Repository (git clone)
 Now that your repository is online, people can see its content and clone it to their local computer.
-Say for example a friend of yours need to have a copry of your repo so he can help with the project, all he needs to do is:
+
+Say for example a friend of yours need to have a copy of your repo (so he can help with the project), all he needs to do is:
 ```
 $ git clone https://github.com/your-username/project-name.git
 ```
