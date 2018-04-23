@@ -237,3 +237,7 @@ If you make updates to your repository, your friend can get updates by first dow
 ```
 $ git pull origin master
 ```
+
+## How Branches Work
+
+On
