@@ -222,3 +222,11 @@ The `git push` command takes two parameters:
 2. The name of the branch to push to, `master`is the default branch for every repo.
 
 The `-u` option stands for “upstream”. It links your repository to an upstream repository for future reference. When you add commits later, Git will show the status of your local copy in relation to the upstream repository.
+
+### Cloning a Repository (git clone)
+Now that your repository is online, people can see its content and clone it to their local computer.
+Say for example a friend of yours need to have a copry of your repo so he can help with the project, all he needs to do is:
+```
+$ git clone https://github.com/your-username/project-name.git
+```
+And just like that a new local repository is automatically created in his computer, with the github version configured as a remote.
