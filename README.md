@@ -200,4 +200,6 @@ Each commit has a unique hash, author, timestamp and commit message.
 
 ## Remote Repository
 
-For now our repository
+For now our repository is local, but we may need to share it with someone for collaboration.
+We will save our repo in a centralized server, in this case GitHub, but there are many other platforms, for example BitBucket.
+
