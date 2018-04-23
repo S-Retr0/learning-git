@@ -280,3 +280,12 @@ $ git branch
 * master
   test_branch
 ```
+
+### Switch Branch (git checkout)
+To change the current branch, type `git checkout <name_brach>`.
+```
+$ git checkout test_branch
+$ git branch
+  master
+* test_branch
+```
