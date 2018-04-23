@@ -262,4 +262,18 @@ This is done for a couple of reasons:
 - When unsure what's best, multiple versions of the same feature can be developed on separate branches and then compared.
 
 ### Creating a New Branch (git branch)
-X
+For now, we only have one branch, which is the default called `master`. Let's check if it's true
+```
+$ git branch
+* master
+```
+If we use the `-a` option we can check the remote branches too
+```
+$ git branch -a
+* master
+  remotes/origin/master
+```
+Let's add a new branch to work on and call it `test_branch`
+```
+$ git branch test_branch
+```
