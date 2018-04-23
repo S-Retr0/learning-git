@@ -201,6 +201,6 @@ Each commit has a unique hash, author, timestamp and commit message.
 ## Remote Repository
 
 For now our repository is local, but we may need to share it with someone for collaboration.
-We will copy our repo in a centralized server, in this case GitHub, but there are many other platforms, for example BitBucket (this new copy is called a remote).
+We will copy our repo in a centralized server, in this case GitHub (this new copy is called a *remote*).
 
 ### Connect to a Remote Repository (git remote add)
