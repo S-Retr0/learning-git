@@ -246,3 +246,6 @@ This is done for a couple of reasons:
 - Many features can be safely developed at once by different people;
 - Developers can work work on their own branch, without the risk of their codebase changing due to someone else's work;
 - When unsure what's best, multiple versions of the same feature can be developed on separate branches and then compared.
+
+### Creating a New Branch (git branch)
+X
