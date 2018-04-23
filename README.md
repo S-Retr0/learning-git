@@ -200,4 +200,4 @@ Each commit has a unique hash, author, timestamp and commit message.
 
 ## Remote Repository
 
-On
+For now our repository
