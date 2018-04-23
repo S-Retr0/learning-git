@@ -221,4 +221,4 @@ The `git push` command takes two parameters:
 1. The name of the repository, in our case it's called `origin`;
 2. The name of the branch to push to, `master`is the default branch for every repo.
 
-The `-u` option is used
+The `-u` option stands for “upstream”. It links your repository to an upstream repository for future reference. When you add commits later, Git will show the status of your local copy in relation to the upstream repository.
