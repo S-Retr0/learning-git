@@ -214,3 +214,10 @@ A project may have many remote repositories at the same time. To be able to tell
 
 ### Uploading to a Server (git push)
 Our remote repository should be empty now, while our local repo has the `README.md` file, so let's transfer out local commits to the server. This process is called **PUSH**.
+```
+$ git push -u origin master
+```
+The `git push` command takes two parameters:
+1. The name of the repository, in our case it's called `origin`;
+2. The name of the branch to push to, `master¡`is the default branch for every repo.
+The `-u` option is used
