@@ -282,10 +282,16 @@ $ git branch
 ```
 
 #### Rename a Branch
-To delete a branch, use the `-D`
+To rename the current branch, use the `-m` option
+```
+$ git branch -m new_branch_name
+```
 
 #### Deleting a Branch
-To delete a branch, use the `-D`
+To delete a branch, use the `-D` option
+```
+$ git branch -D branch_to_delete
+```
 
 ### Switch Branch (git checkout)
 To change the current branch, type `git checkout <name_brach>`.
