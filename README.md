@@ -281,6 +281,12 @@ $ git branch
   test_branch
 ```
 
+#### Rename a Branch
+To delete a branch, use the `-D`
+
+#### Deleting a Branch
+To delete a branch, use the `-D`
+
 ### Switch Branch (git checkout)
 To change the current branch, type `git checkout <name_brach>`.
 ```
