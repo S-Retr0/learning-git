@@ -289,3 +289,11 @@ $ git branch
   master
 * test_branch
 ```
+You can also create branch and switch to it simply by adding the `-b` option:
+```
+$ git branch -b branch_to_delete
+$ git branch
+* branch_to_delete
+  master
+  test_branch
+```
