@@ -310,5 +310,5 @@ $ git branch
   test_branch
 ```
 
-### Merging Branches (git)
+### Merging Branches (git merge)
 X
