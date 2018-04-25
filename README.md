@@ -311,4 +311,10 @@ $ git branch
 ```
 
 ### Merging Branches (git merge)
-X
+Let's add simple text file to our new `test_branch`, then stage it and commit it.
+```
+$ touch simpleFile.txt
+$ git add simpleFile.txt
+$ git commit -m "Added simple file."
+```
+
