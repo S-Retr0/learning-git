@@ -309,3 +309,6 @@ $ git branch
   master
   test_branch
 ```
+
+### Merging Branches (git merge)
+X
