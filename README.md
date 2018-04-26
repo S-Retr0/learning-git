@@ -212,6 +212,12 @@ Date:   Sat Apr 21 18:27:52 2018 +0200
 ```
 Each commit has a unique hash, author, timestamp and commit message.
 
+### See what's new in a commit (git show)
+To see what's new in a commit use the `git show` command followed by the hash of the commit (the first 6 digits are enough):
+```
+$ git show d266a6
+```
+
 ## Remote Repository
 
 For now our repository is local, but we may need to share it with someone for collaboration.
