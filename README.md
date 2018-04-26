@@ -333,4 +333,7 @@ There you go, you tried a new idea on a test branch then added it to the `master
 
 ## Amending Errors
 
-c
+With Git, it’s fairly easy to undo changes you’ve made. In this section, we’ll look at three examples: 
+* undoing a stage operation
+* undoing a commit, by reverting back to an older commit
+* and undoing a push, by rewriting the history of a remote repository
