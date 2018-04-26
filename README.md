@@ -311,15 +311,15 @@ $ git branch
 ```
 
 ### Merging Branches (git merge)
-Let's add a simple text file to our new `test_branch`, then stage it and commit it.
+So we already created the `test_branch` to test our new ideas, so we won't cause troubles in the `master` branch. Let's say that we implemented and tested our new idea in the `test_branch` *(for dimonstration our idea is in the `idea.txt` file which we will create now)*, and we are satisfied with it, so we stage it and commit it
 ```
-$ touch newFeature.txt
-$ git add newFeaturetxt
-$ git commit -m "Added new feature."
+$ touch idea.txt
+$ git add idea.txt
+$ git commit -m "Added new idea."
 ```
-The `newFeature.txt` is now only in the `test_branch`, to bring it to the `master`, we must merge it. First switch back to `master`, then merge it:
+The `idea.txt` is now only in the `test_branch`, to bring it to the `master`, we must merge it. First switch back to `master`, then merge it:
 ```
 $ git checkout master
 $ git merge test_branch
 ```
-Now the `master` branch is up to date.
+There you go, you tried a new idea on a test branch then added it to the `master` branch safely.
