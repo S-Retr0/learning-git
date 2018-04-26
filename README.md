@@ -329,3 +329,8 @@ $ git checkout master
 $ git merge test_branch
 ```
 There you go, you tried a new idea on a test branch then added it to the `master` branch safely.
+
+
+## Fixing a Repo
+
+X
