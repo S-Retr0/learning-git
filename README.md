@@ -338,5 +338,4 @@ With Git, it’s fairly easy to undo changes you’ve made. In this section, we�
 * undoing a commit, by reverting back to an older commit
 * and undoing a push, by rewriting the history of a remote repository
 
-### Undoing a Stage
-X
+
