@@ -353,4 +353,8 @@ $ git checkout tracked_file.txt
 ```
 
 ### Undoing a Commit
-L
+If you’ve already committed your changes and then realized you made a mistake, there’s a way to undo the commit. To do this we use the `reset` command again:
+```
+$ git reset --soft HEAD-1
+```
+x
