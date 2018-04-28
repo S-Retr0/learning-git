@@ -1,7 +1,7 @@
 # How To Use Git
 
 This is a simple guide I'm creating while I'm trying to learn Git since I'm new to it.
-I'm just looking and adding content from different books, blogs and docs and trying to write something that will help me out to become familiar with Git.
+I'm just looking and adding content from different books, blogs and docs, trying to write something that will help me out to become familiar with Git.
 
 ## What is Git?
 
