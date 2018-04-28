@@ -355,6 +355,12 @@ $ git checkout tracked_file.txt
 ### Undoing a Commit
 If you’ve already committed your changes and then realized you made a mistake, there’s a way to undo the commit. To do this we use the `reset` command again:
 ```
-$ git reset --soft HEAD-1
+$ git reset --soft HEAD~1
 ```
-x
+The `HEAD~1` means that you want to go back one commit from where your current HEAD points (which is the last commit).
+The `--soft` option undoes a commit, but lets the changes you made in that commit remain staged for you to review.
+The process of committing involves three steps:
+* making changes in a file;
+* staging it for a commit;
+* and performing a commit operation. 
+The `--soft` option takes us back to just before the commit, when the changes are staged. The `--mixed` option takes us back to just before the staging of the files, where the files have just been changed. While the `--hard` option takes us to a state even before you changed the files.
