@@ -365,3 +365,8 @@ The process of committing involves three steps:
 * and performing a commit operation. 
 
 The `--soft` option takes us back to just before the commit, when the changes are staged. The `--mixed` option takes us back to just before the staging of the files, where the files have just been changed. While the `--hard` option takes us to a state even before you changed the files.
+
+If you want to change the commit message of the last commit, you can use the `--amend` option
+```
+$ git commit --amend -m "Our new commit message"
+```
