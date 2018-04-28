@@ -339,4 +339,16 @@ With Git, it’s fairly easy to undo changes you’ve made. In this section, we�
 * and undoing a push, by rewriting the history of a remote repository
 
 ### Undoing a Stage
-X
+Let's say you just added a new file (`file_to_unsatge.txt`) and asked Git to track it. To undo this, we use the `rm --cached` command.
+```
+$ git rm --cached file_to_unstage.txt
+```
+Now, suppose you had a file (`tracked_file.txt`) which was already tracked, and made changes to it then run `git add` to stage it for commit. Then you realized you made a mistake before committing it. To unstage the changes, we use the `reset HEAD` command, where the `HEAD` option points to the last commit
+```
+$ git reset HEAD tracked_file.txt
+```
+Now the changes are unstaged, but are still in the file, to revert the file to the last commit we run
+```
+$ git checkout tracked_file.txt
+```
+
