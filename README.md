@@ -375,6 +375,14 @@ The process of committing involves three steps:
 
 The `--soft` option takes us back to just before the commit, when the changes are staged. The `--mixed` option takes us back to just before the staging of the files, where the files have just been changed. While the `--hard` option takes us to a state even before you changed the files.
 
+#### The `revert` option
+Here’s how to go back one commit using revert:
+```
+$ git revert HEAD~1
+```
+It also asks you whether you want to modify the commit message for the commit that reverses the changes of the unwanted commits.
+
+#### Change the commit message of last commit
 If you want to change the commit message of the last commit, you can use the `--amend -m` option
 ```
 $ git commit --amend -m "Our new commit message"
