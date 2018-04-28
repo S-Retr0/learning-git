@@ -358,7 +358,8 @@ If you’ve already committed your changes and then realized you made a mistake,
 * `git revert`
 The difference is that `reset` command changes the history of the project, while `revert` undoes the changes made by the faulty commit by creating a new commit that reverses the changes.
 
-##### Let's see first the `reset` command.
+
+#### Let's see first the `reset` command.
 ```
 $ git reset --soft HEAD~1
 ```
