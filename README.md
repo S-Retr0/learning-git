@@ -357,7 +357,10 @@ If you’ve already committed your changes and then realized you made a mistake,
 ```
 $ git reset --soft HEAD~1
 ```
-The `HEAD~1` means that you want to go back one commit from where your current HEAD points (which is the last commit).
+The `HEAD~1` means that you want to go back one commit from where your current HEAD points (which is the last commit). A better approach I think is to use the commit id (the first 6 digits are enough), for example:
+```
+$ git reset --soft a9849d0f
+```
 The `--soft` option undoes a commit, but lets the changes you made in that commit remain staged for you to review.
 The process of committing involves three steps:
 * making changes in a file;
