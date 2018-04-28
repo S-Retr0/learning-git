@@ -388,5 +388,5 @@ If you want to change the commit message of the last commit, you can use the `--
 $ git commit --amend -m "Our new commit message"
 ```
 
-### Undoing a Commit
-I
+### Undoing a Push
+X
