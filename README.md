@@ -389,4 +389,19 @@ $ git commit --amend -m "Our new commit message"
 ```
 
 ### Undoing a Push
+In case you’ve also pushed your changes to a central repository, it’s possible to revert changes in the push too. 
+
+The simplest way is to go for a `revert` and `push` the new commit that undoes the changes:
+```
+$ git revert HEAD~1
+$ git push origin master
+```
+
+However, if you also want the other commit(s) to vanish from the remote repository, you first need to go for a `reset` command (deleting the unwanted commit) and then `push` the changes to the remote. If you perform a normal git push, the push will be rejected—because the origin HEAD is at a more advanced position than your local branch. Therefore, you need to force the change by adding the `-f` option, which forces the push on the remote origin:
+```
+$ git reset --hard HEAD~2
+$ git push -f origin master
+```
+
+### Debugging
 X
