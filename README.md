@@ -226,14 +226,14 @@ We will copy our repo in a centralized server, in this case GitHub (this new cop
 ### Connect to a Remote Repository (git remote add)
 (*In order to upload something to GitHub you must have an account, and create your repo on it. I assume you already did this two things, so let's keep going.*)
 
-We first have to establish a connection to the repository we created on GitHub.
+We first have to establish a connection to the repository we created on GitHub:
 ```
 $ git remote add origin https://github.com/user-name/repository-name.git
 ```
 A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. Traditionally the main remote repository in git is called `origin`.
 
 ### Uploading to a Server (git push)
-Our remote repository should be empty now, while our local repo has the `README.md` file, so let's transfer out local commits to the server. This process is called **PUSH**.
+Our remote repository should be empty now, while our local repo has the `README.md` file, so let's transfer out local commits to the server. This process is called **PUSH**:
 ```
 $ git push -u origin master
 ```
@@ -253,7 +253,7 @@ $ git clone https://github.com/your-username/project-name.git
 And just like that a new local repository is automatically created in his computer, with the github version configured as a remote.
 
 ### Getting Updates from the Server (git pull)
-If you make updates to your repository, your friend can get updates by first downloading the new changes `git fetch`, then merging it to the appropriate branch `git merge`. An alternative is to use `pull`, which is runs the fetch followed by a merge.
+If you make updates to your repository, your friend can get updates by first downloading the new changes `git fetch`, then merging it to the appropriate branch `git merge`. An alternative is to use `pull`, which is runs the fetch followed by a merge:
 ```
 $ git pull origin master
 ```
@@ -268,18 +268,18 @@ This is done for a couple of reasons:
 - When unsure what's best, multiple versions of the same feature can be developed on separate branches and then compared.
 
 ### Creating a New Branch (git branch)
-For now, we only have one branch, which is the default called `master`. Let's check if it's true (the current branch you're in is always marked with a `*`)
+For now, we only have one branch, which is the default called `master`. Let's check if it's true (the current branch you're in is always marked with a `*`):
 ```
 $ git branch
 * master
 ```
-If we use the `-a` option we can check the remote branches too
+If we use the `-a` option we can check the remote branches too:
 ```
 $ git branch -a
 * master
   remotes/origin/master
 ```
-Let's add a new branch to work on and call it `test_branch`
+Let's add a new branch to work on and call it `test_branch`:
 ```
 $ git branch test_branch
 $ git branch
@@ -288,19 +288,19 @@ $ git branch
 ```
 
 #### Rename a Branch
-To rename the current branch, use the `-m` option
+To rename the current branch, use the `-m` option:
 ```
 $ git branch -m new_branch_name
 ```
 
 #### Deleting a Branch
-To delete a branch, use the `-D` option
+To delete a branch, use the `-D` option:
 ```
 $ git branch -D branch_to_delete
 ```
 
 ### Switch Branch (git checkout)
-To change the current branch, type `git checkout <name_brach>`.
+To change the current branch, type `git checkout <name_brach>`:
 ```
 $ git checkout test_branch
 $ git branch
@@ -317,7 +317,7 @@ $ git branch
 ```
 
 ### Merging Branches (git merge)
-So we already created the `test_branch` to test our new ideas, so we won't cause troubles in the `master` branch. Let's say that we implemented and tested our new idea in the `test_branch` *(for dimonstration our idea is in the `idea.txt` file which we will create now)*, and we are satisfied with it, so we stage it and commit it
+So we already created the `test_branch` to test our new ideas, so we won't cause troubles in the `master` branch. Let's say that we implemented and tested our new idea in the `test_branch` *(for dimonstration our idea is in the `idea.txt` file which we will create now)*, and we are satisfied with it, so we stage it and commit it:
 ```
 $ touch idea.txt
 $ git add idea.txt
@@ -339,15 +339,15 @@ With Git, it’s fairly easy to undo changes you’ve made. In this section, we�
 * and undoing a push, by rewriting the history of a remote repository
 
 ### Undoing a Stage
-Let's say you just added a new file (`file_to_unsatge.txt`) and asked Git to track it. To undo this, we use the `rm --cached` command.
+Let's say you just added a new file (`file_to_unsatge.txt`) and asked Git to track it. To undo this, we use the `rm --cached` command:
 ```
 $ git rm --cached file_to_unstage.txt
 ```
-Now, suppose you had a file (`tracked_file.txt`) which was already tracked, and made changes to it then run `git add` to stage it for commit. Then you realized you made a mistake before committing it. To unstage the changes, we use the `reset HEAD` command, where the `HEAD` option points to the last commit
+Now, suppose you had a file (`tracked_file.txt`) which was already tracked, and made changes to it then run `git add` to stage it for commit. Then you realized you made a mistake before committing it. To unstage the changes, we use the `reset HEAD` command, where the `HEAD` option points to the last commit:
 ```
 $ git reset HEAD tracked_file.txt
 ```
-Now the changes are unstaged, but are still in the file, to revert the file to the last commit we run
+Now the changes are unstaged, but are still in the file, to revert the file to the last commit we run:
 ```
 $ git checkout tracked_file.txt
 ```
@@ -382,8 +382,8 @@ $ git revert HEAD~1
 ```
 It also asks you whether you want to modify the commit message for the commit that reverses the changes of the unwanted commits.
 
-#### Change the commit message of last commit
-If you want to change the commit message of the last commit, you can use the `--amend -m` option
+#### Change the commit message of last the commit
+If you want to change the commit message of the last commit, you can use the `--amend -m` option:
 ```
 $ git commit --amend -m "Our new commit message"
 ```
