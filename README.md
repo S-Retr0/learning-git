@@ -352,3 +352,5 @@ Now the changes are unstaged, but are still in the file, to revert the file to t
 $ git checkout tracked_file.txt
 ```
 
+### Undoing a Commit
+L
