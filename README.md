@@ -382,7 +382,7 @@ $ git revert HEAD~1
 ```
 It also asks you whether you want to modify the commit message for the commit that reverses the changes of the unwanted commits.
 
-#### Change the commit message of last commit
+##### Change the commit message of last commit
 If you want to change the commit message of the last commit, you can use the `--amend -m` option
 ```
 $ git commit --amend -m "Our new commit message"
