@@ -402,4 +402,3 @@ However, if you also want the other commit(s) to vanish from the remote reposito
 $ git reset --hard HEAD~2
 $ git push -f origin master
 ```
-x
