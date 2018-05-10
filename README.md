@@ -404,4 +404,3 @@ $ git push -f origin master
 ```
 
 (Add git rebase)
-x
