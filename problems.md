@@ -1,6 +1,6 @@
 # Problems along the road #
 
-Here I will document problems I encountered and mistakes I made and how I solved them (Well, If I managed to ahahha)
+Here I will document problems I encountered and mistakes I made and how I solved them (Well, if I managed to)
 
 
 * Px00		`fatal: repository 'https://github.com/S-Retr0/learning-git.com/' not found`
