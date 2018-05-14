@@ -22,3 +22,4 @@ This time the problem was *two-factor authentication*. I had setup a yubikey for
 Once I removed the two-factor authentication, it worked. I should look at how I can use the yubikey in the terminal.
 
 
+* Px02
