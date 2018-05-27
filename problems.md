@@ -21,3 +21,4 @@ The problem is that I typed learning-git.com instead of learning-git.git when I 
 This time the problem was *two-factor authentication*. I had setup a yubikey for this account, and when I crated a new repo and tried to add it trough the terminal, it kept giving me the `remote: Invalid username or password.`
 Once I removed the two-factor authentication, it worked. I should look at how I can use the yubikey in the terminal.
 
+* Px02
